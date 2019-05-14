@@ -21,6 +21,15 @@ def read_all_data():
     return data
 
 
+def read_stations(file_name):
+    stations = {}
+    with open(file_name, 'r', encoding='utf-8') as f:
+        for line in f:
+            parts = line.split(';')
+            stations[parts[0]] = stations[1]
+    return stations
+
+
 data = read_all_data()
 while True:
     date = input("Enter date: ")
