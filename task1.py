@@ -31,3 +31,6 @@ while True:
             print(f'{entry[0]} - {entry[1]}')
     else:
         print("No information found for the given date")
+print(data)
+
+print("Attempt to implement the main app logic")
