@@ -22,4 +22,12 @@ def read_all_data():
 
 
 data = read_all_data()
-print(data)
+while True:
+    date = input("Enter date: ")
+    if not date:
+        break
+    if date in data:
+        for entry in data[date]:
+            print(f'{entry[0]} - {entry[1]}')
+    else:
+        print("No information found for the given date")
