@@ -28,7 +28,7 @@ while True:
         break
     if date in data:
         for entry in data[date]:
-            print(f'{entry[0]} - {entry[1]}')
+            print(f'{entry[0]} - {(entry[1] - 32) * 5 / 9:.1f}')
     else:
         print("No information found for the given date")
 #print(data)
