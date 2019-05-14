@@ -23,3 +23,5 @@ def read_all_data():
 
 data = read_all_data()
 print(data)
+
+print("Attempt to implement the main app logic")
